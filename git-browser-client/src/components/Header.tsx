@@ -6,8 +6,8 @@ const useStyles = makeStyles({
         backgroundColor: '#005ce6',
         width: '100%',
         height: 40,
-        marginTop: 0,
-        padding: 0,
+        paddingLeft: 10,
+        paddingRight: 10,
     },
     link: {
         textDecoration: 'none'

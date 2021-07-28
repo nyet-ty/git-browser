@@ -1,5 +1,6 @@
 import { useEffect ,useState } from 'react'
 import { useParams, useRouteMatch } from "react-router-dom";
+import ReactMarkdown from 'react-markdown'
 
 import {getRepositoryReadMe} from '../api/functions'
 
@@ -15,5 +16,5 @@ export const ReadMe = () => {
         }
         getReadMe()
     }, [username, repository])
-    return (<div>{readMe}</div>)
+    return (<ReactMarkdown>{readMe}</ReactMarkdown>)
 }

@@ -11,7 +11,7 @@ import { SearchBar } from './components/SearchBar';
 import { theme } from './theme'
 import { RepositoryList } from './components/RepositoryList';
 import { ReadMe } from './components/ReadMe';
-import { Layout } from './components/Layout';
+import { Layout } from './components/Layouts/Layout';
 
 ReactDOM.render(
   <React.StrictMode>

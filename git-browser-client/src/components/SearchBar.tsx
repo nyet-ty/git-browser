@@ -5,12 +5,14 @@ import { useState } from "react"
 export const SearchBar = () => {
     const history = useHistory()
     const [username, setUsername] = useState('')
-    const onClick = () => history.push(`/${username}`)
+
+    const handleSubmit = () => history.push(`/${username}`)
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)
+    
     return (
-        <div>
+        <form onSubmit={() => handleSubmit()}>
             <TextField label="Github username" variant="outlined" size="small" value={username} onChange={onChange} />
-            <Button type="button" onClick={onClick}>Search</Button>
-        </div>
+            <Button type="submit" color="primary" variant="contained">Search</Button>
+        </form>
     )
 }

@@ -20,7 +20,6 @@ export const Header = () => {
     const {username} = useParams<{ username: string }>()
     const needBackButton = match.path === '/:username/:repository'
     const justifyContent = needBackButton ? "space-between" : "flex-start"
-    console.log(needBackButton, match.path)
     return (
 
         <Grid container className={styles.header} justifyContent={justifyContent}>
